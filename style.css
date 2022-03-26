@@ -1,26 +1,168 @@
 @font-face {
     font-family: "Goudy Old Style";
-    src: url("./fonts/goudosi-webfont.woff2") format("woff2"),
-        url("./fonts/goudosi-webfont.woff") format("woff"),
-        url("./fonts/goudosi-webfont.ttf") format("truetype");
+    src: url("./fonts/Goudy_Old_Style/goudosi-webfont.woff2") format("woff2"),
+        url("./fonts/Goudy_Old_Style/goudosi-webfont.woff") format("woff"),
+        url("./fonts/Goudy_Old_Style/goudosi-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Goudy Old Style";
-    src: url("./fonts/goudosb-webfont.woff2") format("woff2"),
-        url("./fonts/goudosb-webfont.woff") format("woff"),
-        url("./fonts/goudosb-webfont.ttf") format("truetype");
+    src: url("./fonts/Goudy_Old_Style/goudosb-webfont.woff2") format("woff2"),
+        url("./fonts/Goudy_Old_Style/goudosb-webfont.woff") format("woff"),
+        url("./fonts/Goudy_Old_Style/goudosb-webfont.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Goudy Old Style";
-    src: url("./fonts/goudos-webfont.woff2") format("woff2"),
-        url("./fonts/goudos-webfont.woff") format("woff"),
-        url("./fonts/goudos-webfont.ttf") format("truetype");
+    src: url("./fonts/Goudy_Old_Style/goudos-webfont.woff2") format("woff2"),
+        url("./fonts/Goudy_Old_Style/goudos-webfont.woff") format("woff"),
+        url("./fonts/Goudy_Old_Style/goudos-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat/montserrat-medium-webfont.woff2")
+            format("woff2"),
+        url("/fonts/Montserrat/montserrat-medium-webfont.woff") format("woff"),
+        url("/fonts/Montserrat/montserrat-medium-webfont.ttf")
+            format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/montserrat-regular-webfont.woff2")
+            format("woff2"),
+        url("./fonts/Montserrat/montserrat-regular-webfont.woff") format("woff"),
+        url("./fonts/Montserrat/montserrat-regular-webfont.ttf")
+            format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/montserrat-light-webfont.woff2")
+            format("woff2"),
+        url("./fonts/Montserrat/montserrat-light-webfont.woff") format("woff"),
+        url("./fonts/Montserrat/montserrat-light-webfont.ttf")
+            format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.logo {
+    width: 120px;
+    margin: 7px 0;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu {
+}
+
+.link {
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.link:hover {
+    border-bottom: 2px solid #f5c228;
+}
+
+.menu__link {
+    padding: 0 7px;
+    margin: 0 24px;
+}
+
+.button {
+    width: 190px;
+    height: 50px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    background-color: #f5c228;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.benefits {
+    height: 570px;
+    background-color: #f5c228;
+    font-family: "Goudy Old Style";
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits__title {
+    margin: -5px 0 0;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.3em;
+}
+
+.benefits__wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-top: 105px;
+}
+.benefits__wrapper__text {
+    font-size: 250px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -19px;
+    padding: 0;
+    line-height: 180px;
+}
+
+.benefits__wrapper__image {
+    position: absolute;
+    width: 230px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    filter: drop-shadow(0px 135px 80px rgba(58, 70, 37, 0.4));
 }
