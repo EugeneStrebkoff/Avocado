@@ -66,6 +66,7 @@ body {
 
 .block {
     padding: 0 100px;
+    font-family: "Montserrat";
 }
 .header {
     height: 70px;
@@ -380,5 +381,45 @@ body {
 
 .food {
     background-color: #fff;
-    height: 300px;
+    padding-top: 74px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food__title {
+    width: 100%;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    text-align: center;
+    margin-bottom: 135px;
+}
+.food__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recipe {
+}
+
+.recipe__image {
+    width: 250px;
+    margin-bottom: 42px;
+    clip-path: path(
+        "M205.573 133.861C187.787 89.4856 205.609 0.860596 125.573 0.860596C45.5373 0.860596 62.3587 89.3606 44.573 124.861C26.7873 160.361 0.572998 187.611 0.572998 240.861C0.572998 320.736 67.7694 355.861 125.573 355.861C183.377 355.861 249.573 320.736 249.573 240.861C249.573 196.486 223.359 178.236 205.573 133.861Z"
+    );
+    background-position: center;
+    background-size: contain;
+}
+
+.recipe__name {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
 }
