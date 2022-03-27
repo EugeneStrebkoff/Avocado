@@ -194,13 +194,56 @@ body {
     max-width: 295px;
     position: relative;
 }
-
 .fact_left {
     text-align: left;
+}
+.fact_left::before {
+    position: absolute;
+    top: -16px;
+    left: -11px;
+    content: " ";
+    width: 64px;
+    height: 52px;
+    background: url("/img/leaf cosmetology.png");
+    background-repeat: no-repeat;
+    background-size: 64px;
+    z-index: -1;
 }
 
 .fact_right {
     text-align: right;
+}
+
+.fact_right::before {
+    position: absolute;
+    top: -16px;
+    transform: scaleX(-1) rotate(-23deg);
+    right: -12px;
+    content: " ";
+    width: 64px;
+    height: 52px;
+    background: url("/img/leaf cosmetology.png");
+    background-repeat: no-repeat;
+    background-size: 64px;
+    z-index: -1;
+}
+
+.about__right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.link-more {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    color: #f5c228;
+    margin-bottom: 43px;
+}
+.link-more:hover {
+    text-decoration: underline;
 }
 
 .fact__image {
@@ -257,4 +300,85 @@ body {
 
 .nutrients__image_whole {
     filter: drop-shadow(0px 30px 39px rgba(45, 63, 17, 0.44));
+    margin-bottom: -70px;
+}
+
+.more {
+    text-align: left;
+}
+
+.delivery {
+    height: auto;
+    font-family: "Montserrat";
+    background-color: #f5c228;
+    padding-top: 74px;
+    margin-bottom: -133px;
+}
+
+.delivery__title {
+    width: 440px;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: -120px;
+}
+
+.stages {
+    position: relative;
+}
+
+.stage__image {
+    width: 100%;
+}
+.stage {
+    position: absolute;
+    color: #1e1e1e;
+    width: 235px;
+}
+
+.stage__number {
+    font-family: "Goudy Old Style";
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.stage__name {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.stage_1 {
+    top: 352px;
+    left: -18px;
+}
+
+.stage_2 {
+    top: 223px;
+    left: 154px;
+}
+
+.stage_3 {
+    top: 450px;
+    left: 304px;
+}
+
+.stage_4 {
+    top: 160px;
+    left: 590px;
+}
+
+.stage_5 {
+    top: 415px;
+    left: 758px;
+}
+
+.food {
+    background-color: #fff;
+    height: 300px;
 }
