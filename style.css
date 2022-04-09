@@ -86,9 +86,6 @@ body {
     flex-wrap: nowrap;
 }
 
-.menu {
-}
-
 .link {
     font-family: "Montserrat";
     font-weight: 500;
@@ -175,7 +172,7 @@ body {
     font-family: "Montserrat";
     font-weight: 400;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .about__title {
@@ -331,8 +328,9 @@ body {
     position: relative;
 }
 
-.stage__image {
+.stages__image {
     width: 100%;
+    margin-bottom: -134px;
 }
 .stage {
     position: absolute;
@@ -380,8 +378,7 @@ body {
 }
 
 .food {
-    background-color: #fff;
-    padding-top: 74px;
+    padding-top: 224px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -404,22 +401,59 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.recipe {
-}
 
+.recipe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
 .recipe__image {
     width: 250px;
+    height: 370px;
     margin-bottom: 42px;
     clip-path: path(
         "M205.573 133.861C187.787 89.4856 205.609 0.860596 125.573 0.860596C45.5373 0.860596 62.3587 89.3606 44.573 124.861C26.7873 160.361 0.572998 187.611 0.572998 240.861C0.572998 320.736 67.7694 355.861 125.573 355.861C183.377 355.861 249.573 320.736 249.573 240.861C249.573 196.486 223.359 178.236 205.573 133.861Z"
     );
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.recipe::after {
+    bottom: 80px;
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: #000;
+    z-index: -1;
+    border-radius: 100px;
+    filter: blur(18px);
+}
+.recipe__image_1 {
+    background-image: url(./img/recipe_1.png);
+}
+
+.recipe__image_2 {
+    background-image: url(./img/recipe_2.png);
+}
+.recipe__image_3 {
+    background-image: url(./img/recipe_3.png);
 }
 
 .recipe__name {
+    text-decoration: none;
+    color: #1e1e1e;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.recipe__name:hover {
+    border-bottom: 2px solid #f5c228;
+    box-sizing: border-box;
 }
